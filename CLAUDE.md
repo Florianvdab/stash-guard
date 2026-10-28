@@ -2,7 +2,8 @@
 
 A static website to keep a list of Diablo 3 items you're hunting (legendaries, set items, legendary gems),
 shown with icon and quality colour, so you recognise them when they drop and don't salvage them.
-Public repo, hosted as a static site (GitHub Pages). English, PC.
+English, PC. Public repo github.com/Florianvdab/stash-guard, live at https://florianvdab.github.io/stash-guard/
+(GitHub Pages from `main`, root; every push to `main` deploys in ~1 min; `.nojekyll` skips the Jekyll build).
 
 Out of scope: reading the real stash/inventory (the Blizzard API can't), trading, build planning.
 
