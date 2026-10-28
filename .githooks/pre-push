@@ -1,0 +1,5 @@
+#!/bin/sh
+# Blocks the push unless lint, tests and the secret scan pass. See CLAUDE.md → "Before every push".
+set -e
+echo "pre-push: npm run check"
+npm run --silent check

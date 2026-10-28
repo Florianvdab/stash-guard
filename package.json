@@ -1,0 +1,20 @@
+{
+  "name": "stash-guard",
+  "private": true,
+  "type": "module",
+  "description": "Track the Diablo 3 items you don't want to salvage.",
+  "scripts": {
+    "prepare": "git config core.hooksPath .githooks",
+    "fetch-items": "node scripts/fetch-items.js",
+    "lint": "eslint .",
+    "test": "node --test",
+    "check:secrets": "node scripts/check-secrets.js",
+    "check": "npm run lint && npm test && npm run check:secrets",
+    "serve": "python3 -m http.server 8099"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0"
+  }
+}
